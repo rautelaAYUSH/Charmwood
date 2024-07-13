@@ -1,9 +1,8 @@
 import Nav from "./Nav.jsx";
 import "./hero.scss";
 import { Body } from "./Body.jsx";
-import AboutUs from "../aboutUs.jsx";
 
-function Hero() {
+const Hero = () => {
   return (
     <>
       <div className="hero">
@@ -13,9 +12,6 @@ function Hero() {
         <div className="body">
           <Body />
         </div>
-      </div>
-      <div className="aboutUs">
-        <AboutUs/>
       </div>
     </>
   );

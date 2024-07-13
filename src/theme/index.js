@@ -14,19 +14,20 @@ const theme = createTheme({
       main: "#dc004e",
     },
     background: {
-      default: "#f4f6f8",
+      white: "#ffff",
+
     },
     text: {
       primary   : "#333",
       secondary : "#666",
     },
   },
-/*   typography: {
+  typography: {
     fontFamily : "Roboto, sans-serif",
     h1         : {
       fontSize   : "2.5rem",
       fontWeight : 500,
-      lineHeight : 1.2,
+      lineHeight : 1.5,
     },
     h2: {
       fontSize   : "2rem",
@@ -41,9 +42,12 @@ const theme = createTheme({
     h4: {
       fontSize   : "1.5rem",
       fontWeight : 400,
-      lineHeight : 1.2,
     },
-  }, */
+    h5: {
+      fontSize   : "1rem",
+      fontWeight : 400,
+    },
+  },
 });
 
 export default theme;

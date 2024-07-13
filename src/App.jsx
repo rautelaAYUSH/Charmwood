@@ -1,9 +1,9 @@
-import Hero from './components/hero/Hero.jsx'
+import Home from './pages/home.jsx'
 
 function App() {
   return (
     <>
-      <Hero />
+      <Home />
     </>
   )
 }
