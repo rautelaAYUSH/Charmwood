@@ -1,9 +1,8 @@
 import { Grid, Typography, Box } from "@mui/material";
 import { CommonContainer } from "./reusableComponents/commonContainer";
-import Carousel from "react-material-ui-carousel";
-import { groupIntoChunks } from "../utils";
 import { galleryImages } from "../consts";
 import { useTheme } from "@emotion/react";
+import CommonCarousel from "./reusableComponents/commonCarousel";
 
 const Services = () => {
   const theme = useTheme();
@@ -43,7 +42,10 @@ const Services = () => {
                     height          : "100%",
                     position        : "relative",
                     transition      : "transform 0.5s ease-in-out",
-                    backgroundColor : "#FCFAEE",
+                    backgroundColor : "#d8d8d8bf",
+                    display         : "flex",
+                    flexDirection   : "column",
+                    justifyContent  : "space-between",
                     "&:hover"       : {
                       transform       : "scale(1.05)",
                       backgroundImage : `linear-gradient(to right, ${theme.palette.brand.primary} 0%, ${theme.palette.brand.secondary} 100%)`,
@@ -52,16 +54,31 @@ const Services = () => {
                 >
                   <div
                     style={{
-                      height          : "100%",
                       backgroundColor : "#fff",
                       transition      : "border 0.3s ease-in-out",
+                      padding         : "1rem",
+                      display         : "flex",
+                      flexDirection   : "column",
+                      justifyContent  : "space-between",
+                      height          : "100%",
                     }}
                   >
-                    <Typography variant="h1"> {index + 1} </Typography>
-                    <Typography variant="h1">{service.title} </Typography>
+                    <Typography variant="h1" sx={{ fontSize: "50px" }}>
+                      {" "}
+                      {"0" + `${index + 1}`}{" "}
+                    </Typography>
+                    <Typography
+                      variant="h1"
+                      sx={{ fontSize: "30px", marginTop: "2rem" }}
+                    >
+                      {service.title}{" "}
+                    </Typography>
                     <Typography
                       variant="h5"
-                      sx={{ marginTop: "2rem", color: "#757576" }}
+                      sx={{
+                        marginTop : "2rem",
+                        color     : "#757576",
+                      }}
                     >
                       {service.description}
                     </Typography>
@@ -74,59 +91,7 @@ const Services = () => {
       </CommonContainer>
 
       <CommonContainer sx={{ backgroundColor: "#FCFAEE" }}>
-        <Box textAlign="center" padding="4rem 4rem 2rem 4rem">
-          <Typography variant="h1" gutterBottom>
-            Glimpses of Academy
-          </Typography>
-
-          <Carousel sx={{ height: "100%" }}>
-            {groupIntoChunks(galleryImages, 4).map((group, groupIndex) => (
-              <Grid
-                container
-                key={groupIndex}
-                sx={{
-                  gap            : "20px",
-                  justifyContent : "center",
-                  alignItems     : "center",
-                  py             : "20px",
-                  height         : "70vh",
-                }}
-              >
-                {group.map((img, imgIndex) => (
-                  <Grid
-                    item
-                    key={imgIndex}
-                    xl
-                    lg
-                    md
-                    sm
-                    xs
-                    sx={{
-                      height         : "100%",
-                      borderRadius   : "8px",
-                      display        : "flex",
-                      justifyContent : "center",
-                      alignItems     : "center",
-                      cursor         : "grab",
-                      overflow       : "hidden",
-                    }}
-                  >
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      style={{
-                        height    : "80%",
-                        width     : "80%",
-                        objectFit : "cover",
-                        boxShadow : "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                      }}
-                    />
-                  </Grid>
-                ))}
-              </Grid>
-            ))}
-          </Carousel>
-        </Box>
+        <CommonCarousel title="Glimpses of Academy" images={galleryImages} />
       </CommonContainer>
     </>
   );

@@ -23,7 +23,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily : "Roboto, sans-serif",
+    fontFamily : "Playfair Display, serif",
     h1         : {
       fontSize   : "2.5rem",
       fontWeight : 500,
