@@ -11,7 +11,7 @@ export const Body = () => {
   const isSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <CommonContainer>
+    <CommonContainer sx={{height: '87vh'}}>
       <Card sx={{ boxShadow: "none", height: "100%", width: "100%" }}>
         <Grid container height="100%">
           {/* Image and Text layout based on screen size */}
@@ -129,8 +129,9 @@ export const Body = () => {
                   image="rider_op.png"
                   alt="green iguana"
                   sx={{
-                    objectFit : "cover",
+                    objectFit : "contain",
                     width     : "100%",
+                    height    : '100%'
                   }}
                 />
               </Grid>

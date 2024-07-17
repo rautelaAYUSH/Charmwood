@@ -1,4 +1,4 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box, useMediaQuery } from "@mui/material";
 import { CommonContainer } from "./reusableComponents/commonContainer";
 import { galleryImages } from "../consts";
 import { useTheme } from "@emotion/react";
@@ -6,9 +6,16 @@ import CommonCarousel from "./reusableComponents/commonCarousel";
 
 const Services = () => {
   const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   return (
     <>
-      <CommonContainer sx={{ padding: "2.5rem" }}>
+      <CommonContainer
+        sx={{
+          padding : "2.5rem",
+          height  : isLargeScreen ? "100vh" : "100%",
+        }}
+      >
         <Box textAlign="center">
           <Typography variant="h1" gutterBottom>
             Our Key Services
@@ -64,14 +71,13 @@ const Services = () => {
                     }}
                   >
                     <Typography variant="h1" sx={{ fontSize: "50px" }}>
-                      {" "}
-                      {"0" + `${index + 1}`}{" "}
+                      {"0" + `${index + 1}`}
                     </Typography>
                     <Typography
                       variant="h1"
                       sx={{ fontSize: "30px", marginTop: "2rem" }}
                     >
-                      {service.title}{" "}
+                      {service.title}
                     </Typography>
                     <Typography
                       variant="h5"
@@ -90,7 +96,12 @@ const Services = () => {
         </Box>
       </CommonContainer>
 
-      <CommonContainer sx={{ backgroundColor: "#FCFAEE" }}>
+      <CommonContainer
+        sx={{
+          backgroundColor : "#FCFAEE",
+          height          : "100vh",
+        }}
+      >
         <CommonCarousel title="Glimpses of Academy" images={galleryImages} />
       </CommonContainer>
     </>

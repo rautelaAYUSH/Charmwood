@@ -1,17 +1,21 @@
-import { Grid, Typography, Box, Button } from "@mui/material";
+import { Grid, Typography, Box, Button, useMediaQuery } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import CommonTextfield from "./reusableComponents/commonTextfield";
+import { useTheme } from "@emotion/react";
 
 const Footer = () => {
+  const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   return (
     <Box
       sx={{
         backgroundColor : "#000",
         color           : "#fff",
         padding         : "2rem",
-        height          : "70vh",
+        height          : isLargeScreen ? "70vh" : "100%",
       }}
     >
       <Grid container spacing={4}>
