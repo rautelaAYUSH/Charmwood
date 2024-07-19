@@ -17,7 +17,7 @@ const Faq = () => {
 
   return (
     <Box padding="4rem 4rem 2rem 4rem">
-      <Typography variant="h1" gutterBottom textAlign="center">
+      <Typography variant="h1" gutterBottom >
         Frequently Asked Questions
       </Typography>
 
@@ -39,7 +39,7 @@ const Faq = () => {
             expandIcon={<ExpandMoreIcon />}
             style={{fontWeight: "700 !important"}}
           >
-            { `🐎 ${item.header}`}
+            { ` ${item.header}`}
           </AccordionSummary>
           <AccordionDetails
           >
