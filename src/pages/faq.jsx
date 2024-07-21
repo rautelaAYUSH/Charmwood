@@ -5,6 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { faqData } from "../consts";
 import { useState } from "react";
+import './underline.css'
 
 const Faq = () => {
   const [expanded, setExpanded] = useState(false);
@@ -16,8 +17,9 @@ const Faq = () => {
   };
 
   return (
-    <Box padding="4rem 4rem 2rem 4rem">
-      <Typography variant="h1" gutterBottom >
+    <Box padding="4rem 4rem 4rem 4rem">
+      <Typography variant="h1" gutterBottom component='div' className='heading-text' sx={{marginBottom: '23px'}}>
+        <div className="line"></div>
         Frequently Asked Questions
       </Typography>
 

@@ -4,6 +4,7 @@ import Gallery from "./pages/gallery";
 import Layout from "./pages/layout/layout";
 import Faq from "./pages/faq";
 import Contact from "./pages/contact";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="our-story" element={<About />} />
           <Route path="faq" element={<Faq />} />
           <Route path="contact-us" element={<Contact />} />
         </Route>

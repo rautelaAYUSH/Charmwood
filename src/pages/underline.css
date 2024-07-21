@@ -1,0 +1,12 @@
+.heading-text {
+    display: inline-block;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 50%;
+    border-bottom: 4px solid #A02321;
+  }

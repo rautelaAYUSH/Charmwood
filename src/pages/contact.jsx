@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { MdPhone } from 'react-icons/md';
 import Map from './map';
+import "./underline.css"
 
 
 const Contact = () => {
     return (
         <Box padding="2% 4%">
-            <Typography variant="h1" gutterBottom>
+            <Typography variant="h1" gutterBottom component="div" className='heading-text'>
+                <div className="line"></div>
                 Contact Us
             </Typography>
             <Grid container spacing={2} sx={{ marginTop: '2%' }}>
