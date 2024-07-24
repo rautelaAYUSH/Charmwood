@@ -13,7 +13,7 @@ const About = () => {
                 </Typography>
            
                 <Grid container spacing={2} sx={{ marginTop: '2%' }}>
-                    <Grid item xs={12} sm={5} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 4%' }}>
+                    <Grid item xs={12} sm={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 4%' }}>
                         <Typography variant="h3" sx={{
                             fontSize: "1.2rem",
                             fontFamily: "Inter, serif",
@@ -24,7 +24,7 @@ const About = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={7}>
+                    <Grid item xs={12} sm={6}>
                         <Box >
                             <ReactPlayer
                                 url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
