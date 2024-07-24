@@ -24,15 +24,16 @@ const About = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={7} >
-                        <Box>
+                    <Grid item xs={12} sm={7}>
+                        <Box >
                             <ReactPlayer
                                 url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
-                                width="100%"
+                                width="80%"
                                 // height="48vh"
                                 height="60vh"
                                 controls={true}
-                                light="Compressed/Horses1.webp"
+                                light="Compressed/Academy2.webp"
+                                
                             />
                         </Box>
                     </Grid>
