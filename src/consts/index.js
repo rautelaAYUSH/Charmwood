@@ -8,6 +8,74 @@ export const galleryImages = [
     { src: "image (25).jpg", alt: "Child on horse 3" },
   ]
 
+export const academy = [
+  { src: "Compressed/Academy1.webp", alt: "" },
+  { src: "Compressed/Academy2.webp", alt: "" },
+  { src: "Compressed/Academy3.webp", alt: "" },
+  { src: "Compressed/Academy4.webp", alt: "" },
+  // { src: "Compressed/Academy5.webp", alt: "" },
+  // { src: "Compressed/Academy6.webp", alt: "" },
+  // { src: "Compressed/Academy7.webp", alt: "" },
+  // { src: "Compressed/Academy8.webp", alt: "" },
+  // { src: "Compressed/Academy9.webp", alt: "" },
+  // { src: "Compressed/Academy10.webp", alt: "" },
+  // { src: "Compressed/Academy11.webp", alt: "" },
+  // { src: "Compressed/Academy12.webp", alt: "" },
+]
+
+export const exploration = [
+  { src: "Compressed/Exploration1.webp", alt: "" },
+  { src: "Compressed/Exploration2.webp", alt: "" },
+  { src: "Compressed/Exploration3.webp", alt: "" },
+  { src: "Compressed/Exploration4.webp", alt: "" },
+  // { src: "Compressed/Exploration5.webp", alt: "" },
+  // { src: "Compressed/Exploration6.webp", alt: "" },
+  // { src: "Compressed/Exploration7.webp", alt: "" },
+  // { src: "Compressed/Exploration8.webp", alt: "" },
+  // { src: "Compressed/Exploration9.webp", alt: "" },
+  // { src: "Compressed/Exploration10.webp", alt: "" },
+  // { src: "Compressed/Exploration11.webp", alt: "" },
+  // { src: "Compressed/Exploration12.webp", alt: "" },
+]
+
+export const kids = [
+  { src: "Compressed/Kids1.webp", alt: "" },
+  { src: "Compressed/Kids2.webp", alt: "" },
+  { src: "Compressed/Kids3.webp", alt: "" },
+  { src: "Compressed/Kids4.webp", alt: "" },
+  // { src: "Compressed/Kids5.webp", alt: "" },
+  // { src: "Compressed/Kids6.webp", alt: "" },
+  // { src: "Compressed/Kids7.webp", alt: "" },
+  // { src: "Compressed/Kids8.webp", alt: "" },
+  // { src: "Compressed/Kids9.webp", alt: "" },
+  // { src: "Compressed/Kids10.webp", alt: "" },
+]
+
+export const women = [
+  {src: 'Compressed/Women1.webp', alt: ""},
+  {src: 'Compressed/Women2.webp', alt: ""},
+  {src: 'Compressed/Women3.webp', alt: ""},
+  {src: 'Compressed/Women4.webp', alt: ""},
+]
+
+export const horses = [
+  {src: 'Compressed/Horses1.webp', alt: ""},
+  {src: 'Compressed/Horses2.webp', alt: ""},
+  {src: 'Compressed/Horses3.webp', alt: ""},
+  {src: 'Compressed/Horses4.webp', alt: ""},
+]
+
+export const homeCarousel = [
+  {src: 'Compressed/Academy1.webp', alt: ""},
+  {src: 'Compressed/Exploration1.webp', alt: ""},
+  {src: 'Compressed/Women3.webp', alt: ""},
+  {src: 'Compressed/Kids1.webp', alt: ""},
+  // {src: 'Compressed/Horses1.webp', alt: ""},
+  // {src: 'Compressed/Academy1.webp', alt: ""},
+  // {src: 'Compressed/Women1.webp', alt: ""},
+  // {src: 'Compressed/Kids2.webp', alt: ""},
+]
+
 export const faqData = [
     {
       header:

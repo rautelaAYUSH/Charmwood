@@ -1,6 +1,6 @@
 import { Grid, Typography, Box, useMediaQuery } from "@mui/material";
 import { CommonContainer } from "./reusableComponents/commonContainer";
-import { galleryImages } from "../consts";
+import { homeCarousel } from "../consts";
 import { useTheme } from "@emotion/react";
 import CommonCarousel from "./reusableComponents/commonCarousel";
 
@@ -102,7 +102,7 @@ const Services = () => {
           height          : "100vh",
         }}
       >
-        <CommonCarousel title="Glimpses of Academy" images={galleryImages} />
+        <CommonCarousel title="Glimpses of Academy" images={homeCarousel} />
       </CommonContainer>
     </>
   );

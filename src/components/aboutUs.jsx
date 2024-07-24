@@ -32,7 +32,7 @@ const AboutUs = () => {
               <Grid container direction="row">
                 <Grid item xs={6} md={6} sx={{display: "flex", justifyContent: "center"}}>
                   <img
-                    src="image (25).jpg"
+                    src="Compressed/Women1.webp"
                     alt="Horse Riding 1"
                     style={{
                       width        : "80%",
@@ -44,7 +44,7 @@ const AboutUs = () => {
                 </Grid>
                 <Grid item xs={6} md={6} sx={{display: "flex", justifyContent: "center"}}>
                   <img
-                    src="kid3.jpg"
+                    src="Compressed/Kids5.webp"
                     alt="Horse Riding 1"
                     style={{
                       width        : "80%",
@@ -96,7 +96,7 @@ const AboutUs = () => {
                 <Grid container sx={{ padding: "20px", alignItems: "center" }}>
                   <Grid item xs={12} md={6}>
                     <img
-                      src="image (25).jpg"
+                      src="Compressed/Women1.webp"
                       alt="Horse Riding 1"
                       style={{
                         width        : "90%",
@@ -109,7 +109,7 @@ const AboutUs = () => {
                     <Grid container direction="column">
                       <Grid item xs={12} md={6} sx={{ padding: "10px" }}>
                         <img
-                          src="kid3.jpg"
+                          src="Compressed/Kids5.webp"
                           alt="Horse Riding 2"
                           style={{
                             width        : "85%",
@@ -121,7 +121,7 @@ const AboutUs = () => {
                       </Grid>
                       <Grid item xs={12} md={6} sx={{ padding: "10px" }}>
                         <img
-                          src="kid1.jpg"
+                          src="Compressed/Kids6.webp"
                           alt="Horse Riding 3"
                           style={{
                             width        : "85%",

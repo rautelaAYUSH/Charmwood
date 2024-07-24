@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
+import LazyLoad from 'react-lazyload';
 
 const groupIntoChunks = (array, chunkSize) => {
   let chunks = [];
@@ -54,41 +55,43 @@ const CommonCarousel = ({ title, images }) => {
             container
             key={groupIndex}
             sx={{
-              justifyContent : "center",
-              alignItems     : "center",
-              py             : gridPadding,
-              height         : containerHeight,
+              justifyContent: "center",
+              alignItems: "center",
+              py: gridPadding,
+              height: containerHeight,
             }}
           >
             {group.map((img, imgIndex) => (
               <Grid
                 item
                 key={imgIndex}
-                xl 
+                xl
                 lg={3}
                 md={6}
-                sm={12} 
+                sm={12}
                 xs={12}
                 sx={{
-                  height         : isXs ? "70%" : "100%", // Adjusted image height for small devices
-                  borderRadius   : "8px",
-                  display        : "flex",
-                  justifyContent : "center",
-                  alignItems     : "center",
-                  cursor         : "grab",
-                  overflow       : "hidden",
+                  height: isXs ? "70%" : "100%", // Adjusted image height for small devices
+                  borderRadius: "8px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  cursor: "grab",
+                  overflow: "hidden",
                 }}
               >
+
                 <img
                   src={img.src}
                   alt={img.alt}
                   style={{
-                    height    : "80%",
-                    width     : "80%",
-                    objectFit : "cover",
-                    boxShadow : "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    height: "80%",
+                    width: "80%",
+                    objectFit: "cover",
+                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                   }}
                 />
+
               </Grid>
             ))}
           </Grid>
@@ -99,11 +102,11 @@ const CommonCarousel = ({ title, images }) => {
 };
 
 CommonCarousel.propTypes = {
-  title  : PropTypes.string.isRequired,
-  images : PropTypes.arrayOf(
+  title: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(
     PropTypes.shape({
-      src : PropTypes.string.isRequired,
-      alt : PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

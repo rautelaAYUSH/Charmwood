@@ -6,14 +6,12 @@ import "./underline.css"
 const About = () => {
     return (
         <div>
-            <Box padding="2% 4%">
+            <Box padding="2% 4%" sx={{minHeight: '87vh'}}>
                 <Typography variant="h1" gutterBottom component="div" className='heading-text'>
                     <div className="line"></div>
                     Our Story 
                 </Typography>
-            </ Box >
-
-            <Box padding="2% 4%">
+           
                 <Grid container spacing={2} sx={{ marginTop: '2%' }}>
                     <Grid item xs={12} sm={5} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 4%' }}>
                         <Typography variant="h3" sx={{
@@ -31,9 +29,10 @@ const About = () => {
                             <ReactPlayer
                                 url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
                                 width="100%"
-                                height="48vh"
+                                // height="48vh"
+                                height="60vh"
                                 controls={true}
-                                light="kid1.jpg"
+                                light="Compressed/Horses1.webp"
                             />
                         </Box>
                     </Grid>
