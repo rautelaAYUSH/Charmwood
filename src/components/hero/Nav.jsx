@@ -37,6 +37,7 @@ const Nav = () => {
     <AppBar
       position="static"
       sx={{
+        position        : 'relative',
         backgroundColor : "white",
         flex            : "0 0 auto",
         boxShadow       : "0px 4px 10px 0px #FF00008A",
