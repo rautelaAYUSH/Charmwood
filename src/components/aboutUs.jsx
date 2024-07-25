@@ -32,7 +32,7 @@ const AboutUs = () => {
               <Grid container direction="row">
                 <Grid item xs={6} md={6} sx={{display: "flex", justifyContent: "center"}}>
                   <img
-                    src="Compressed/Women1.webp"
+                    src="Compressed/Women1.jpg"
                     alt="Horse Riding 1"
                     style={{
                       width        : "80%",
@@ -44,7 +44,7 @@ const AboutUs = () => {
                 </Grid>
                 <Grid item xs={6} md={6} sx={{display: "flex", justifyContent: "center"}}>
                   <img
-                    src="Compressed/Kids5.webp"
+                    src="Compressed/Kids5.jpg"
                     alt="Horse Riding 1"
                     style={{
                       width        : "80%",

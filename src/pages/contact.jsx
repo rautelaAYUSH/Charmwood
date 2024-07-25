@@ -56,7 +56,7 @@ const Contact = () => {
                         <CardMedia
                             component="img"
                             height="100%"
-                            image="Compressed/Group3.webp"
+                            image="Compressed/Group3.jpg"
                             alt="green iguana"
                             sx={{
                                 borderRadius: '32px',
