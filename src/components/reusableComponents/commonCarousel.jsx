@@ -48,16 +48,21 @@ const CommonCarousel = ({ title, images }) => {
       <Typography variant="h1" gutterBottom sx={{fontFamily: 'Playfair Display, serif'}}>
         {title}
       </Typography>
-      <Carousel sx={{ height: "100%" }}>
+      <Carousel
+        sx={{ height: "100%" }}
+        autoPlay={false}
+        animation="none" // Disable animation
+        indicators={true} // Show indicators for manual navigation
+      >
         {groupIntoChunks(images, imagesPerView).map((group, groupIndex) => (
           <Grid
             container
             key={groupIndex}
             sx={{
-              justifyContent: "center",
-              alignItems: "center",
-              py: gridPadding,
-              height: containerHeight,
+              justifyContent : "center",
+              alignItems     : "center",
+              py             : gridPadding,
+              height         : containerHeight,
             }}
           >
             {group.map((img, imgIndex) => (
@@ -70,27 +75,25 @@ const CommonCarousel = ({ title, images }) => {
                 sm={12}
                 xs={12}
                 sx={{
-                  height: isXs ? "70%" : "100%", // Adjusted image height for small devices
-                  borderRadius: "8px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  cursor: "grab",
-                  overflow: "hidden",
+                  height         : isXs ? "70%" : "100%", // Adjusted image height for small devices
+                  borderRadius   : "8px",
+                  display        : "flex",
+                  justifyContent : "center",
+                  alignItems     : "center",
+                  cursor         : "grab",
+                  overflow       : "hidden",
                 }}
               >
-
                 <img
                   src={img.src}
                   alt={img.alt}
                   style={{
-                    height: "80%",
-                    width: "80%",
-                    objectFit: "cover",
-                    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                    height    : "80%",
+                    width     : "80%",
+                    objectFit : "cover",
+                    boxShadow : "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                   }}
                 />
-
               </Grid>
             ))}
           </Grid>
@@ -101,11 +104,11 @@ const CommonCarousel = ({ title, images }) => {
 };
 
 CommonCarousel.propTypes = {
-  title: PropTypes.string.isRequired,
-  images: PropTypes.arrayOf(
+  title  : PropTypes.string.isRequired,
+  images : PropTypes.arrayOf(
     PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
+      src : PropTypes.string.isRequired,
+      alt : PropTypes.string.isRequired,
     })
   ).isRequired,
 };

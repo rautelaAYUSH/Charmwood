@@ -37,6 +37,7 @@ const Nav = () => {
     <AppBar
       position="static"
       sx={{
+        position        : 'relative',
         backgroundColor : "white",
         flex            : "0 0 auto",
         boxShadow       : "0px 4px 10px 0px #FF00008A",
@@ -104,7 +105,7 @@ const Nav = () => {
             className="size-20 rounded-full"
           />
         </IconButton>
-        {/* <Typography
+        <Typography
           variant="h6"
           sx={{
             flexGrow   : 1,
@@ -115,7 +116,7 @@ const Nav = () => {
           }}
         >
           Charm Wood
-        </Typography> */}
+        </Typography>
       </Toolbar>
     </AppBar>
   );
