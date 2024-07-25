@@ -20,23 +20,24 @@ const Footer = () => {
     >
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h4" gutterBottom sx={{fontSize:'2rem', fontFamily: 'Playfair Display, serif'}}>
             Contact Us
           </Typography>
-          <Typography variant="body1" sx={{ marginBottom: "2rem" }}>
+          <Typography variant="body1" sx={{ marginBottom: "2rem", fontSize:'1.3rem', fontFamily:'Inter, sans-serif'}}>
             We are here to address your inquiries and provide the help you need.
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" sx={{fontSize:'1rem', fontFamily:'Inter, sans-serif'}}>
             <Box
               component="span"
               sx={{
                 display      : "flex",
                 alignItems   : "center",
                 marginBottom : "1rem",
+                fontSize: "1rem",
               }}
             >
               <LocationOnIcon sx={{ marginRight: "0.5rem" }} />
-              Second Floor, abc A, Place
+              Behind Indian oil petrol pu.p, Kidduwala, Dehradun, Uttarakhand 248008
             </Box>
             <Box
               component="span"
@@ -44,10 +45,11 @@ const Footer = () => {
                 display      : "flex",
                 alignItems   : "center",
                 marginBottom : "1rem",
+                fontSize: "1rem",
               }}
             >
               <PhoneIcon sx={{ marginRight: "0.5rem" }} />
-              1800 0000 000
+              8755051014
             </Box>
             <Box
               component="span"
@@ -55,10 +57,12 @@ const Footer = () => {
                 display      : "flex",
                 alignItems   : "center",
                 marginBottom : "1rem",
+                fontSize: "1rem",
+                fontFamily:'Inter, sans-serif'
               }}
             >
               <EmailIcon sx={{ marginRight: "0.5rem" }} />
-              youremail@office.com
+              charmwoodhorseriding@gmail.com
             </Box>
           </Typography>
         </Grid>
@@ -69,7 +73,8 @@ const Footer = () => {
               backgroundColor : "#d8d8d8",
               padding         : "1rem",
               borderRadius    : "8px",
-              color           : "black"
+              color           : "black",
+              fontFamily:'Inter, sans-serif',
             }}
           >
             <CommonTextfield label={"Full Name"} />
@@ -87,6 +92,7 @@ const Footer = () => {
               sx={{
                 backgroundColor : "#000",
                 color           : "#fff",
+                fontFamily:'Inter, sans-serif',
                 marginTop       : "1rem",
                 "&:hover"       : {
                   backgroundColor: "#333",

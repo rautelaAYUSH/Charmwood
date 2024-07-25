@@ -12,7 +12,7 @@ const Services2 = () => {
     return (
         <>
         <Box>
-            <Typography variant="h1" className='heading-text'>
+            <Typography variant="h1" style={{fontSize: '2rem', textAlign: 'center'}}>
                 Exploration Trails
             </Typography>
             {/* <Typography variant="h3" sx={{

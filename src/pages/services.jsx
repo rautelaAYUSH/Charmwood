@@ -23,7 +23,7 @@ const Services = () => {
     }
 
     const inactiveStyle = {
-        color: 'black',
+        color: 'grey',
         textDecoration: 'none',
         fontFamily: "Inter, serif",
         fontWeight: '500',
@@ -34,11 +34,11 @@ const Services = () => {
 
     return (
         <Box padding="4rem 4rem 4rem 4rem" sx={{minHeight: '87vh'}}>
-            <Typography variant="h1" gutterBottom component='div' className='heading-text' sx={{ marginBottom: '23px' }}>
+            <Typography variant="h1" gutterBottom component='div' className='heading-text' sx={{ marginBottom: '23px', fontSize: '2.8rem' }}>
                 <div className="line"></div>
                 Services
             </Typography>
-            <Grid container spacing={2} sx={{ alignItems: 'flex-start' }}>
+            <Grid container spacing={2} sx={{ alignItems: 'flex-start', fontSize: '1.7rem'}}>
                 <Grid item md={2}>
                     <Box sx={{
                         display: 'flex',

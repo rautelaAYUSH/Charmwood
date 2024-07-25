@@ -5,7 +5,7 @@ const Services1 = () => {
     return (
         <Box>
             <Typography variant="h1" sx={{
-                fontSize: "1.7rem",
+                fontSize: "1.5rem",
                 fontFamily: "Inter, serif",
             }}>
                 Horses lend us the wings we lack, 
