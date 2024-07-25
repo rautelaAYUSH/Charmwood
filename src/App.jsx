@@ -6,6 +6,7 @@ import Faq from "./pages/faq";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Services from "./pages/services";
+import "./index.css"
 
 function App() {
   return (

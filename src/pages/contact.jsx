@@ -1,13 +1,16 @@
 import React from 'react'
-import { Box, Typography, Grid, CardMedia } from "@mui/material";
+import { Box, Typography, Grid, CardMedia, useMediaQuery } from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { MdPhone } from 'react-icons/md';
+import { useTheme } from '@mui/material/styles';
 import Map from './map';
 import "./underline.css"
 
 
 const Contact = () => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <>
             <Box padding="2% 4%" sx={{height: '87vh'}}>
@@ -20,6 +23,7 @@ const Contact = () => {
                         <Typography variant="h3" sx={{
                             fontSize: "1.4rem",
                             fontFamily: "Inter, serif",
+                            textAlign: matches ? 'left' : 'center',
                         }}>
                             Lets get in touch and curate according to your needs
                         </Typography>
@@ -75,12 +79,15 @@ const Contact = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={4} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 4%' }}>
-                        <Typography variant="h1" gutterBottom>
+                        <Typography variant="h1" gutterBottom sx={{
+                            textAlign: matches ? 'left' : 'center',
+                        }}>
                             Meet Us
                         </Typography>
                         <Typography variant="h3" sx={{
                             fontSize: "1.4rem",
                             fontFamily: "Inter, serif",
+                            textAlign: matches ? 'left' : 'center',
                         }}>
                             Lets get in touch and curate according to your needs
                         </Typography>

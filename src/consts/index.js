@@ -38,6 +38,22 @@ export const exploration = [
   // { src: "Compressed/Exploration12.webp", alt: "" },
 ]
 
+export const exploration2 = [
+  { src: "Compressed/Exploration1.webp", alt: "" },
+  { src: "Compressed/Exploration2.webp", alt: "" },
+  { src: "Compressed/Exploration3.webp", alt: "" },
+  { src: "Compressed/Exploration4.webp", alt: "" },
+  { src: "Compressed/Exploration9.webp", alt: "" },
+  { src: "Compressed/Exploration5.webp", alt: "" },
+  { src: "Compressed/Exploration6.webp", alt: "" },
+  // { src: "Compressed/Exploration7.webp", alt: "" },
+  { src: "Compressed/Exploration8.webp", alt: "" },
+  // { src: "Compressed/Exploration10.webp", alt: "" },
+  // { src: "Compressed/Exploration11.webp", alt: "" },
+  // { src: "Compressed/Exploration12.webp", alt: "" },
+]
+
+
 export const kids = [
   { src: "Compressed/Kids1.webp", alt: "" },
   { src: "Compressed/Kids2.webp", alt: "" },

@@ -21,7 +21,7 @@ const Services = () => {
             Our Key Services
           </Typography>
 
-          <Grid container spacing={3} justifyContent="center" mt={2}>
+          <Grid container spacing={3} justifyContent="center" alignItems="center" mt={2}>
             {[
               {
                 title       : "Sale Of Horses",
@@ -32,12 +32,12 @@ const Services = () => {
                 description : "15-24 Classes According To Your Needs",
               },
               {
-                title: "Exploration Trails",
+                title: "Trail rides",
                 description:
-                  "Picturesque Rides Along Scenic Trails, Meandering Through Rivers And Forests",
+                  "Picturesque Rides Along Scenic Trails: Mountains, Rivers And Forests",
               },
               {
-                title       : "Customizations",
+                title       : "Custom Solutions",
                 description : "Speak To Us Lets Create Something For You",
               },
             ].map((service, index) => (

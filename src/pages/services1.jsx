@@ -5,7 +5,7 @@ const Services1 = () => {
     return (
         <Box>
             <Typography variant="h1" sx={{
-                fontSize: "2rem",
+                fontSize: "1.7rem",
                 fontFamily: "Inter, serif",
             }}>
                 Horses lend us the wings we lack, 
@@ -22,14 +22,14 @@ const Services1 = () => {
            
             
             <Typography variant="h1" sx={{
-                fontSize: "1.7rem",
+                fontSize: "1.5rem",
                 fontFamily: "Inter, serif",
                 marginTop: '1.5rem',
             }}>
                 24 classes for 14999/-
             </Typography>
             <Typography variant="h3" sx={{
-                fontSize: "1.4rem",
+                fontSize: "1.3rem",
                 fontFamily: "Inter, serif",
                 color: '#908A8A',
             }}>
@@ -37,14 +37,14 @@ const Services1 = () => {
             </Typography>
 
             <Typography variant="h1" sx={{
-                fontSize: "1.7rem",
+                fontSize: "1.5rem",
                 fontFamily: "Inter, serif",
                 marginTop: '1.5rem',
             }}>
                 12 classes for 7999/-
             </Typography>
             <Typography variant="h3" sx={{
-                fontSize: "1.4rem",
+                fontSize: "1.3rem",
                 fontFamily: "Inter, serif",
                 color: '#908A8A',
             }}>
