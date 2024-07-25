@@ -104,7 +104,7 @@ const Nav = () => {
             className="size-20 rounded-full"
           />
         </IconButton>
-        <Typography
+        {/* <Typography
           variant="h6"
           sx={{
             flexGrow   : 1,
@@ -115,7 +115,7 @@ const Nav = () => {
           }}
         >
           Charm Wood
-        </Typography>
+        </Typography> */}
       </Toolbar>
     </AppBar>
   );
