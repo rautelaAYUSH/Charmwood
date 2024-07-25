@@ -9,10 +9,10 @@ export const galleryImages = [
   ]
 
 export const academy = [
-  { src: "Compressed/Academy1.webp", alt: "" },
-  { src: "Compressed/Academy2.webp", alt: "" },
-  { src: "Compressed/Academy3.webp", alt: "" },
-  { src: "Compressed/Academy4.webp", alt: "" },
+  { src: "Compressed/Academy1.jpg", alt: "" },
+  { src: "Compressed/Academy2.jpg", alt: "" },
+  { src: "Compressed/Academy3.jpg", alt: "" },
+  { src: "Compressed/Academy4.jpg", alt: "" },
   // { src: "Compressed/Academy5.webp", alt: "" },
   // { src: "Compressed/Academy6.webp", alt: "" },
   // { src: "Compressed/Academy7.webp", alt: "" },
@@ -24,10 +24,10 @@ export const academy = [
 ]
 
 export const exploration = [
-  { src: "Compressed/Exploration1.webp", alt: "" },
-  { src: "Compressed/Exploration2.webp", alt: "" },
-  { src: "Compressed/Exploration3.webp", alt: "" },
-  { src: "Compressed/Exploration4.webp", alt: "" },
+  { src: "Compressed/Exploration1.jpg", alt: "" },
+  { src: "Compressed/Exploration2.jpg", alt: "" },
+  { src: "Compressed/Exploration3.jpg", alt: "" },
+  { src: "Compressed/Exploration4.jpg", alt: "" },
   // { src: "Compressed/Exploration5.webp", alt: "" },
   // { src: "Compressed/Exploration6.webp", alt: "" },
   // { src: "Compressed/Exploration7.webp", alt: "" },
@@ -39,15 +39,15 @@ export const exploration = [
 ]
 
 export const exploration2 = [
-  { src: "Compressed/Exploration1.webp", alt: "" },
-  { src: "Compressed/Exploration2.webp", alt: "" },
-  { src: "Compressed/Exploration3.webp", alt: "" },
-  { src: "Compressed/Exploration4.webp", alt: "" },
-  { src: "Compressed/Exploration9.webp", alt: "" },
-  { src: "Compressed/Exploration5.webp", alt: "" },
-  { src: "Compressed/Exploration6.webp", alt: "" },
+  { src: "Compressed/Exploration1.jpg", alt: "" },
+  { src: "Compressed/Exploration2.jpg", alt: "" },
+  { src: "Compressed/Exploration3.jpg", alt: "" },
+  { src: "Compressed/Exploration4.jpg", alt: "" },
+  { src: "Compressed/Exploration9.jpg", alt: "" },
+  { src: "Compressed/Exploration5.jpg", alt: "" },
+  { src: "Compressed/Exploration6.jpg", alt: "" },
   // { src: "Compressed/Exploration7.webp", alt: "" },
-  { src: "Compressed/Exploration8.webp", alt: "" },
+  { src: "Compressed/Exploration8.jpg", alt: "" },
   // { src: "Compressed/Exploration10.webp", alt: "" },
   // { src: "Compressed/Exploration11.webp", alt: "" },
   // { src: "Compressed/Exploration12.webp", alt: "" },
@@ -55,10 +55,10 @@ export const exploration2 = [
 
 
 export const kids = [
-  { src: "Compressed/Kids1.webp", alt: "" },
-  { src: "Compressed/Kids2.webp", alt: "" },
-  { src: "Compressed/Kids3.webp", alt: "" },
-  { src: "Compressed/Kids4.webp", alt: "" },
+  { src: "Compressed/Kids1.jpg", alt: "" },
+  { src: "Compressed/Kids2.jpg", alt: "" },
+  { src: "Compressed/Kids3.jpg", alt: "" },
+  { src: "Compressed/Kids4.jpg", alt: "" },
   // { src: "Compressed/Kids5.webp", alt: "" },
   // { src: "Compressed/Kids6.webp", alt: "" },
   // { src: "Compressed/Kids7.webp", alt: "" },
@@ -68,24 +68,24 @@ export const kids = [
 ]
 
 export const women = [
-  {src: 'Compressed/Women1.webp', alt: ""},
-  {src: 'Compressed/Women2.webp', alt: ""},
-  {src: 'Compressed/Women3.webp', alt: ""},
-  {src: 'Compressed/Women4.webp', alt: ""},
+  {src: 'Compressed/Women1.jpg', alt: ""},
+  {src: 'Compressed/Women2.jpg', alt: ""},
+  {src: 'Compressed/Women3.jpg', alt: ""},
+  {src: 'Compressed/Women4.jpg', alt: ""},
 ]
 
 export const horses = [
-  {src: 'Compressed/Horses1.webp', alt: ""},
-  {src: 'Compressed/Horses2.webp', alt: ""},
-  {src: 'Compressed/Horses3.webp', alt: ""},
-  {src: 'Compressed/Horses4.webp', alt: ""},
+  {src: 'Compressed/Horses1.jpg', alt: ""},
+  {src: 'Compressed/Horses2.jpg', alt: ""},
+  {src: 'Compressed/Horses3.jpg', alt: ""},
+  {src: 'Compressed/Horses4.jpg', alt: ""},
 ]
 
 export const homeCarousel = [
-  {src: 'Compressed/Academy1.webp', alt: ""},
-  {src: 'Compressed/Exploration1.webp', alt: ""},
-  {src: 'Compressed/Women3.webp', alt: ""},
-  {src: 'Compressed/Kids1.webp', alt: ""},
+  {src: 'Compressed/Academy1.jpg', alt: ""},
+  {src: 'Compressed/Exploration1.jpg', alt: ""},
+  {src: 'Compressed/Women3.jpg', alt: ""},
+  {src: 'Compressed/Kids1.jpg', alt: ""},
   // {src: 'Compressed/Horses1.webp', alt: ""},
   // {src: 'Compressed/Academy1.webp', alt: ""},
   // {src: 'Compressed/Women1.webp', alt: ""},

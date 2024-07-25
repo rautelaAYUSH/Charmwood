@@ -27,7 +27,7 @@ const Services2 = () => {
             <Grid container spacing={2} sx={{ marginTop: '2%' }}>
                 <Grid item xs={12} sm={5} >
                     <Box>
-                        <img src="Compressed/Exploration1.webp" alt="" 
+                        <img src="Compressed/Exploration1.jpg" alt="" 
                         // style={{height: '55vh', width: '100%'}}
                         />
                     </Box>

@@ -96,7 +96,7 @@ const AboutUs = () => {
                 <Grid container sx={{ padding: "20px", alignItems: "center" }}>
                   <Grid item xs={12} md={6}>
                     <img
-                      src="Compressed/Women1.webp"
+                      src="Compressed/Women1.jpg"
                       alt="Horse Riding 1"
                       style={{
                         width        : "90%",
@@ -109,7 +109,7 @@ const AboutUs = () => {
                     <Grid container direction="column">
                       <Grid item xs={12} md={6} sx={{ padding: "10px" }}>
                         <img
-                          src="Compressed/Kids5.webp"
+                          src="Compressed/Kids5.jpg"
                           alt="Horse Riding 2"
                           style={{
                             width        : "85%",
@@ -121,7 +121,7 @@ const AboutUs = () => {
                       </Grid>
                       <Grid item xs={12} md={6} sx={{ padding: "10px" }}>
                         <img
-                          src="Compressed/Kids6.webp"
+                          src="Compressed/Kids6.jpg"
                           alt="Horse Riding 3"
                           style={{
                             width        : "85%",

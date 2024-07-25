@@ -38,7 +38,7 @@ const About = () => {
                                 // height="48vh"
                                 // height="80vh"
                                 controls={true}
-                                light="Compressed/Academy2.webp"
+                                light="Compressed/Academy2.jpg"
                                    
                             />
                         </Box>
