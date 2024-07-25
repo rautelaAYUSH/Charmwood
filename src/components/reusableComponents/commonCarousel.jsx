@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import LazyLoad from 'react-lazyload';
 
 const groupIntoChunks = (array, chunkSize) => {
   let chunks = [];
