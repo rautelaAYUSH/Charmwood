@@ -5,7 +5,7 @@ import { PrimaryButton } from "./reusableComponents/primaryButton";
 const AboutUs = () => {
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.down("lg"));
-
+  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
       {isSm ? (
@@ -28,7 +28,7 @@ const AboutUs = () => {
             }}
             spacing={2}
           >
-            <Grid xs={12} sx={{display: "flex", flexDirection: "column", gap: "4rem"}}>
+            <Grid xs={12} sx={{display: "flex", flexDirection: "column", gap: isXs ? "1rem" : "4rem"}}>
               <Grid container direction="row">
                 <Grid item xs={6} md={6} sx={{display: "flex", justifyContent: "center"}}>
                   <img
@@ -65,6 +65,7 @@ const AboutUs = () => {
                     marginTop  : "2rem",
                     fontSize   : "16px",
                     fontFamily : "Inter, sans-serif",
+                    
                   }}
                 >
                   As Abhishek's reputation grew, people began approaching him

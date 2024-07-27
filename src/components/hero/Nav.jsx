@@ -108,6 +108,7 @@ const Nav = () => {
         <Typography
           variant="h6"
           sx={{
+            fontFamily : "Playfair Display, serif !important",
             flexGrow   : 1,
             display    : { xs: "flex", md: "none" },
             fontWeight : 700,

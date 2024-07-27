@@ -122,7 +122,7 @@ export const Body = () => {
                   </PrimaryButton>
                 </CardContent>
               </Grid>
-              <Grid item xs={12} sm={6} sx={{ height: "100%" }}>
+              <Grid item xs={12} sm={6} sx={{ height: "100%", paddingTop: '4rem' }}>
                 <CardMedia
                   component="img"
                   height="100%"

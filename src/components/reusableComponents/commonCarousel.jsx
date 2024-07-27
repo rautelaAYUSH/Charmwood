@@ -46,14 +46,14 @@ const CommonCarousel = ({ title, images }) => {
       // padding={removePadding ? "0" : "4rem 4rem 2rem 4rem"}
       padding={"4rem 4rem 2rem 4rem"}
     >
-      <Typography variant="h1" gutterBottom sx={{className: 'heading-text'}}>
+      <Typography variant="h1" gutterBottom sx={{className: 'heading-text', fontSize: isSm ? '1.5rem' : '2.5rem'  }}>
         {title}
       </Typography>
       <Carousel
         sx={{ height: "100%" }}
         autoPlay={false}
-        animation="none" // Disable animation
-        indicators={true} // Show indicators for manual navigation
+        animation="none"
+        indicators={true}
       >
         {groupIntoChunks(images, imagesPerView).map((group, groupIndex) => (
           <Grid
