@@ -17,7 +17,7 @@ const CommonCarousel = ({ title, images }) => {
   const isMd = useMediaQuery(theme.breakpoints.between("sm", "md"));
   const isLg = useMediaQuery(theme.breakpoints.between("md", "lg"));
   const isXl = useMediaQuery(theme.breakpoints.up("lg"));
-  // const removePadding = useMediaQuery(theme.breakpoints.down("lg"));
+  const removePadding = useMediaQuery(theme.breakpoints.down("lg"));
 
   let imagesPerView = 4;
   let containerHeight = "70vh";
@@ -43,10 +43,9 @@ const CommonCarousel = ({ title, images }) => {
   return (
     <Box
       textAlign="center"
-      // padding={removePadding ? "0" : "4rem 4rem 2rem 4rem"}
-      padding={"4rem 4rem 2rem 4rem"}
-    >
-      <Typography variant="h1" gutterBottom sx={{className: 'heading-text', fontSize: isSm ? '1.5rem' : '2.5rem'  }}>
+      padding={removePadding ? "4rem 0 2rem 0" : "4rem 4rem 2rem 4rem"}
+    > 
+      <Typography variant="h1" gutterBottom sx={{className: 'heading-text'}}>
         {title}
       </Typography>
       <Carousel

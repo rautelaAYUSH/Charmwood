@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { useState } from 'react'
 import { Box, Typography, Grid, Link } from "@mui/material";
 import './underline.css'
 import Services1 from './services1';
@@ -13,21 +13,21 @@ const Services = () => {
     };
 
     const activeStyle = {
-        color: '#A02321',
-        textDecoration: 'none',
-        fontFamily: "Inter, serif",
-        fontWeight: 'bold',
-        '&:hover': {
+        color          : '#A02321',
+        textDecoration : 'none',
+        fontFamily     : "Inter, serif",
+        fontWeight     : 'bold',
+        '&:hover'      : {
             cursor: 'pointer',
         },
     }
 
     const inactiveStyle = {
-        color: 'grey',
-        textDecoration: 'none',
-        fontFamily: "Inter, serif",
-        fontWeight: '500',
-        '&:hover': {
+        color          : 'grey',
+        textDecoration : 'none',
+        fontFamily     : "Inter, serif",
+        fontWeight     : '500',
+        '&:hover'      : {
           cursor: 'pointer'
         },
     }
@@ -41,8 +41,8 @@ const Services = () => {
             <Grid container spacing={2} sx={{ alignItems: 'flex-start', fontSize: '1.7rem'}}>
                 <Grid item md={2}>
                     <Box sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
+                        display       : 'flex',
+                        flexDirection : 'column',
 
                     }}>
                         <Link to="/link1"
@@ -64,7 +64,7 @@ const Services = () => {
                     </Box>
                 </Grid>
 
-                <Grid item md={10} sx={{padding: '0 4%'}}>
+                <Grid item md={10} >
                     {activeLink === 'link1' && <Services1></Services1>}
                     {activeLink === 'link2' && <Services2></Services2>}
                 </Grid>

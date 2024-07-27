@@ -1,6 +1,4 @@
-import React from 'react'
 import { Box, Typography, Grid, useMediaQuery } from '@mui/material'
-import { height, width } from '@fortawesome/free-brands-svg-icons/fa42Group'
 import { useTheme } from '@mui/material/styles';
 import CommonCarousel from "../components/reusableComponents/commonCarousel.jsx";
 import { exploration2 } from '../consts';
@@ -34,9 +32,9 @@ const Services2 = () => {
                 </Grid>
                 <Grid item xs={12} sm={7} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5% 5%' }}>
                     <Typography variant="h3" sx={{
-                        fontSize: "1.2rem",
-                        fontFamily: "Inter, serif",
-                        textAlign: matches ? 'left' : 'center',
+                        fontSize   : "1.2rem",
+                        fontFamily : "Inter, serif",
+                        textAlign  : matches ? 'left' : 'center',
                     }}>
                         Discover a world of wonder: Immerse yourself in the heart of nature as you embark on an unforgettable horseback adventure. Our expertly guided trails offer breathtaking scenery, diverse terrain, and the perfect opportunity to connect with nature.
                     </Typography>

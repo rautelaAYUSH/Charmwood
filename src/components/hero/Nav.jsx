@@ -2,7 +2,6 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Typography,
   Box,
   Button,
   Menu,
@@ -78,7 +77,7 @@ const Nav = () => {
             </Button>
           ))}
         </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+        <Box sx={{ display: { xs: "flex", md: "none"} }}>
           <IconButton color="inherit" size="large" onClick={openNav}>
             <MenuIcon sx={{fill: "black"}}/>
           </IconButton>
@@ -90,7 +89,7 @@ const Nav = () => {
                 to={page.path}
                 onClick={closeNav}
                 sx={{
-                  color: location.pathname === page.path ? "#A02321" : "black",
+                  color: location.pathname === page.path ? "#A02321" : "black", fontFamily: "Playfair Display, serif !important", fontWeight : 500,
                 }}
               >
                 {page.name}
@@ -105,19 +104,6 @@ const Nav = () => {
             className="size-20 rounded-full"
           />
         </IconButton>
-        <Typography
-          variant="h6"
-          sx={{
-            fontFamily : "Playfair Display, serif !important",
-            flexGrow   : 1,
-            display    : { xs: "flex", md: "none" },
-            fontWeight : 700,
-            fontSize   : "1.5rem",
-            color      : "black",
-          }}
-        >
-          Charm Wood
-        </Typography>
       </Toolbar>
     </AppBar>
   );
