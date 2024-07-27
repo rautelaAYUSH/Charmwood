@@ -44,7 +44,7 @@ const Nav = () => {
         zIndex          : 1,
       }}
     >
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between"}}>
         <IconButton sx={{ display: { xs: "none", md: "flex" } }}>
           <img
             src="charmwood_logo.jpg"
@@ -68,7 +68,7 @@ const Nav = () => {
               component={Link}
               to={page.path}
               sx={{
-                fontFamily : "Playfair Display, serif",
+                fontFamily : "Playfair Display, serif !important",
                 fontWeight : 700,
                 fontSize   : "22px",
                 color      : location.pathname === page.path ? "#A02321" : "black",

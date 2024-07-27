@@ -23,7 +23,7 @@ const Footer = () => {
           <Typography variant="h4" gutterBottom sx={{fontSize:'2rem', fontFamily: 'Playfair Display, serif'}}>
             Contact Us
           </Typography>
-          <Typography variant="body1" sx={{ marginBottom: "2rem", fontSize:'1.3rem', fontFamily:'Inter, sans-serif'}}>
+          <Typography variant="body1" sx={{ marginBottom: "1.3rem", fontSize:'1.1rem', fontFamily:'Inter, sans-serif'}}>
             We are here to address your inquiries and provide the help you need.
           </Typography>
           <Typography variant="body2" sx={{fontSize:'1rem', fontFamily:'Inter, sans-serif'}}>

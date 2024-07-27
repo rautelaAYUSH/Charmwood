@@ -9,7 +9,7 @@ import './underline.css'
 
 const Faq = () => {
   const [expanded, setExpanded] = useState(false);
-  const margin_bottom = "16px";
+  const margin_bottom = "1.3rem";
   const font_family = "Inter, sans-serif";
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -17,8 +17,8 @@ const Faq = () => {
   };
 
   return (
-    <Box padding="4rem 4rem 4rem 4rem">
-      <Typography variant="h1" gutterBottom component='div' className='heading-text' sx={{marginBottom: '23px'}}>
+    <Box padding="0 2rem 2rem 2rem">
+      <Typography variant="h1" gutterBottom component='div' className='heading-text'>
         <div className="line"></div>
         Frequently Asked Questions
       </Typography>

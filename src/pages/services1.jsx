@@ -1,9 +1,15 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography,useMediaQuery } from '@mui/material'
+import { useTheme } from '@mui/material/styles';
 
 const Services1 = () => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up('md'));
+
     return (
-        <Box>
+        <Box sx={{
+            marginTop : matches ? '0' : '2rem',
+        }}>
             <Typography variant="h1" sx={{
                 fontSize: "1.5rem",
                 fontFamily: "Inter, serif",

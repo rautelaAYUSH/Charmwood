@@ -13,12 +13,12 @@ const Contact = () => {
     const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <>
-            <Box padding="2% 4%" sx={{height: '87vh'}}>
+            <Box padding="0 4%" sx={{height: '87vh'}}>
                 <Typography variant="h1" gutterBottom component="div" className='heading-text'>
                     <div className="line"></div>
                     Contact Us
                 </Typography>
-                <Grid container spacing={2} sx={{ marginTop: '2%' }}>
+                <Grid container spacing={2}>
                     <Grid item md={12} lg={5} xl={4} order={{ xs: 2, lg: 1 }} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 4%' }}>
                         <Typography variant="h3" sx={{
                             fontSize: "1.4rem",

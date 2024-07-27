@@ -9,19 +9,19 @@ const About = () => {
     const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <div>
-            <Box padding="2% 4%" sx={{minHeight: '87vh'}}>
+            <Box padding="0 4%" sx={{minHeight: '87vh'}}>
                 <Typography variant="h1" gutterBottom component="div" className='heading-text'>
                     <div className="line"></div>
                     Our Story 
                 </Typography>
            
-                <Grid container spacing={2} sx={{ marginTop: '2%' }}>
-                    <Grid item xs={12} md={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 4%' }} order={{ xs: 2, md: 1 }}>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }} order={{ xs: 2, md: 1 }}>
                         <Typography variant="h3" sx={{
                             fontSize: "1.1rem",
                             fontFamily: "Inter, serif",
                             marginTop: "5%",
-                            padding: matches ? "4%": '0',
+                            padding: matches ? '0': '8%',
                             textAlign: matches ? 'left' : 'center',
                         }}>
                             Charmwood Horse Riding Academy was born from the passion of our founder, Abhishek. It all began in Pune, where he first discovered the joy of horse riding. This passion took him across India, learning from the best and perfecting his skills.

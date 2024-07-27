@@ -45,7 +45,7 @@ const CommonCarousel = ({ title, images }) => {
       textAlign="center"
       padding={removePadding ? "0" : "4rem 4rem 2rem 4rem"}
     >
-      <Typography variant="h1" gutterBottom sx={{fontFamily: 'Playfair Display, serif'}}>
+      <Typography variant="h1" gutterBottom sx={{className: 'heading-text'}}>
         {title}
       </Typography>
       <Carousel

@@ -1,8 +1,9 @@
 .heading-text {
     display: inline-block;
     position: relative;
-    font-size: 1.7rem;
-    font-family: 'Playfair Display', serif;
+    font-size:2.5rem !important;
+    font-family: 'Playfair Display', serif !important;
+    margin: 3rem 0 !important;
 }
 
 .line {

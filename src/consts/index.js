@@ -39,9 +39,9 @@ export const exploration = [
 ]
 
 export const exploration2 = [
-  { src: "Compressed/Exploration1.jpg", alt: "" },
-  { src: "Compressed/Exploration2.jpg", alt: "" },
   { src: "Compressed/Exploration3.jpg", alt: "" },
+  { src: "Compressed/Exploration2.jpg", alt: "" },
+  { src: "Compressed/Exploration1.jpg", alt: "" },
   { src: "Compressed/Exploration4.jpg", alt: "" },
   { src: "Compressed/Exploration9.jpg", alt: "" },
   { src: "Compressed/Exploration5.jpg", alt: "" },
