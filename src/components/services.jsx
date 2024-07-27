@@ -17,11 +17,11 @@ const Services = () => {
         }}
       >
         <Box textAlign="center">
-          <Typography variant="h1" gutterBottom>
+          <Typography variant="h1" gutterBottom sx={{marginBottom: isLargeScreen ? '5rem' : '0.35rem'}}>
             Our Key Services
           </Typography>
 
-          <Grid container spacing={3} justifyContent="center" alignItems="center" mt={2}>
+          <Grid container spacing={3} justifyContent="center" alignItems="stretch" mt={2}>
             {[
               {
                 title       : "Sale Of Horses",
@@ -41,12 +41,11 @@ const Services = () => {
                 description : "Speak To Us Lets Create Something For You",
               },
             ].map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid item xs={12} sm={6} md={3} key={index} style={{ display: 'flex' }}>
                 <Box
-                  textAlign="center"
                   sx={{
                     padding         : "2rem",
-                    height          : "100%",
+                    flex            : 1,
                     position        : "relative",
                     transition      : "transform 0.5s ease-in-out",
                     backgroundColor : "#d8d8d8bf",
