@@ -22,7 +22,7 @@ export const Body = () => {
                 <CardMedia
                   component="img"
                   height="100%"
-                  image="rider_op.png"
+                  image="hero-bg-img.png"
                   alt="green iguana"
                   sx={{
                     objectFit : "cover",
@@ -126,7 +126,7 @@ export const Body = () => {
                 <CardMedia
                   component="img"
                   height="100%"
-                  image="rider_op.png"
+                  image="hero-bg-img.png"
                   alt="green iguana"
                   sx={{
                     objectFit : "contain",
