@@ -89,7 +89,7 @@ const Nav = () => {
                 to={page.path}
                 onClick={closeNav}
                 sx={{
-                  color: location.pathname === page.path ? "#A02321" : "black", fontFamily: "Playfair Display, serif !important", fontWeight : 500,
+                  color: location.pathname === page.path ? "#A02321" : "black", fontFamily: "Playfair Display, serif !important", fontWeight: 500,
                 }}
               >
                 {page.name}

@@ -9,6 +9,7 @@ import { CommonContainer } from "../reusableComponents/commonContainer";
 export const Body = () => {
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMd = useMediaQuery('(min-width:400px) and (max-width:600px)');
 
   return (
     <CommonContainer sx={{height: '87vh'}}>
@@ -18,7 +19,7 @@ export const Body = () => {
           {isSm ? (
             <>
               {/* Image on top, Text below for small screens */}
-              <Grid item xs={12} sx={{ height: "50vh", overflow: "hidden" }}>
+              <Grid item xs={12} sx={{ height: "50vh", overflow: "hidden", display: 'flex', justifyContent: 'center' }}>
                 <CardMedia
                   component="img"
                   height="100%"
@@ -26,7 +27,7 @@ export const Body = () => {
                   alt="green iguana"
                   sx={{
                     objectFit : "cover",
-                    width     : "100%",
+                    width     : isMd ? "60%" : "100%",
                   }}
                 />
               </Grid>
