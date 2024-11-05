@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const pages = [
   { name: "Home", path: "/" },
@@ -32,6 +32,12 @@ const Nav = () => {
     setNav(null);
   };
 
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/"); 
+  };
+
   return (
     <AppBar
       position="static"
@@ -44,7 +50,7 @@ const Nav = () => {
       }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between"}}>
-        <IconButton sx={{ display: { xs: "none", md: "flex" } }}>
+        <IconButton sx={{ display: { xs: "none", md: "flex" } }} onClick={handleLogoClick}>
           <img
             src="charmwood_logo.jpg"
             alt="Charmwood Logo"

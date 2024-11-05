@@ -5,7 +5,7 @@ import { TextField, Typography } from "@mui/material";
 export const CommonTextfield = (props) => {
 
   const { sx, label, ...otherProps } = props;
-  console.log(label);
+  // console.log(label);
   return (
     <div>
       <Typography h="h4" sx={{fontFamily: "Inter, sans-serif"}}>{label}</Typography>

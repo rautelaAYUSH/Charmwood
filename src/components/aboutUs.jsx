@@ -74,7 +74,7 @@ const AboutUs = () => {
                   teaching could flourish. Join us and experience the magic of
                   riding at Charmwood Horse Riding Academy.
                 </Typography>
-                <PrimaryButton sx={{ marginTop: "2rem" }}>
+                <PrimaryButton sx={{ marginTop: "2rem" }} click="about">
                   View more
                 </PrimaryButton>
               </Grid>
