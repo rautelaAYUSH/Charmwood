@@ -92,57 +92,63 @@ const Footer = () => {
             variant="body2"
             sx={{ fontSize: "1rem", fontFamily: "Inter, sans-serif" }}
           >
-            <Box
-              component="span"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                marginBottom: "1rem",
-                fontSize: "1rem",
-              }}
-            >
-              <LocationOnIcon sx={{ marginRight: "0.5rem" }} />
-              Behind Indian oil petrol pump, Kidduwala, Dehradun, Uttarakhand
-              248008
-            </Box>
-            <Box
-              component="span"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                marginBottom: "1rem",
-                fontSize: "1rem",
-              }}
-            >
-              <PhoneIcon sx={{ marginRight: "0.5rem" }} />
-              8755051014
-            </Box>
-            <Box
-              component="span"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                marginBottom: "1rem",
-                fontSize: "1rem",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              <EmailIcon sx={{ marginRight: "0.5rem" }} />
-              {isXs ? (
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=charmwoodhorseriding@gmail.com"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    color: "inherit",
-                  }}
-                >
-                  click to mail
-                </a>
-              ) : (
-                "charmwoodhorseriding@gmail.com"
-              )}
-            </Box>
+            <a href="https://www.google.com/maps/place/Charmwood+Horse+Riding+Academy+%26+Equestrian/@30.2991878,78.0894638,17z/data=!3m1!4b1!4m6!3m5!1s0x390929b1df679171:0x7836d917c76d697f!8m2!3d30.2991832!4d78.0920387!16s%2Fg%2F11cnn7s2lh?entry=ttu" target="_blank" referrerPolicy="no-referrer">
+              <Box
+                component="span"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "1rem",
+                  fontSize: "1rem",
+                }}
+              >
+                <LocationOnIcon sx={{ marginRight: "0.5rem" }} />
+                Behind Indian oil petrol pump, Kidduwala, Dehradun, Uttarakhand
+                248008
+              </Box>
+            </a>
+            <a href="tel:8755051014" target="_blank" referrerPolicy="no-referrer">
+              <Box
+                component="span"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "1rem",
+                  fontSize: "1rem",
+                }}
+              >
+                <PhoneIcon sx={{ marginRight: "0.5rem" }} />
+                8755051014
+              </Box>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=charmwoodhorseriding@gmail.com" target="_blank" referrerPolicy="no-referrer">
+              <Box
+                component="span"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "1rem",
+                  fontSize: "1rem",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
+                <EmailIcon sx={{ marginRight: "0.5rem" }} />
+                {isXs ? (
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=charmwoodhorseriding@gmail.com"
+                    target="_blank"
+                    style={{
+                      textDecoration: "none",
+                      color: "inherit",
+                    }}
+                  >
+                    click to mail
+                  </a>
+                ) : (
+                  "charmwoodhorseriding@gmail.com"
+                )}
+              </Box>
+            </a>
           </Typography>
         </Grid>
 
