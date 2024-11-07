@@ -33,7 +33,7 @@ const About = () => {
                     <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }} >
                         <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <ReactPlayer
-                                url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+                                url="https://github.com/rautelaAYUSH/Charmwood/raw/refs/heads/main/public/charmwood_about.mp4"
                                 width="80%"
                                 // height="48vh"
                                 // height="80vh"
