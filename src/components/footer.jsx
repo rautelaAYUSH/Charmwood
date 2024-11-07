@@ -1,4 +1,4 @@
-import { Grid, Typography, Box, Button, useMediaQuery } from "@mui/material";
+import { Grid, Typography, Box, Button, useMediaQuery, CardMedia } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -30,7 +30,7 @@ const Footer = () => {
         backgroundColor : "#000",
         color           : "#fff",
         padding         : "2rem",
-        height          : isLargeScreen ? "70vh" : "100%",
+        height          : "100%",
       }}
     >
       <Grid container spacing={4}>
@@ -110,41 +110,14 @@ const Footer = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={6}>
-          <Box
-            sx={{
-              backgroundColor : "#d8d8d8",
-              padding         : "1rem",
-              borderRadius    : "8px",
-              color           : "black",
-              fontFamily      : "Inter, sans-serif",
-            }}
-          >
-            <CommonTextfield label={"Full Name"} />
-            <CommonTextfield label={"Email"} />
-            <CommonTextfield
-              label={"Message"}
-              margin="normal"
-              multiline
-              rows={4}
-            />
-
-            <Button
-              fullWidth
-              variant="contained"
-              sx={{
-                backgroundColor : "#000",
-                color           : "#fff",
-                fontFamily      : "Inter, sans-serif",
-                marginTop       : "1rem",
-                "&:hover"       : {
-                  backgroundColor: "#333",
-                },
-              }}
-            >
-              Send Message
-            </Button>
-          </Box>
+        <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <CardMedia
+                  component="img"
+                  height="100%"
+                  image="oakshade.png"
+                  alt="green iguana"
+                  sx={{height: isLargeScreen ? '50%' : '80%', with: isLargeScreen ? '50%' : '80%'}}
+                />
         </Grid>
       </Grid>
     </Box>
